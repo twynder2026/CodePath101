@@ -2,8 +2,17 @@
 
 This ARM template deploys an Azure Firewall with custom DNAT, network, and application rules.
 
-# Purpose
-This project shows what I’ve learned about Azure network security and how to automate infrastructure. Sharing this helps me demonstrate my skills and what I’m capable of doing in real-world cloud security.
+## Overview
+
+This project showcases hands-on experience with deploying and configuring a Microsoft Azure Firewall using Infrastructure as Code (IaC) through an ARM (Azure Resource Manager) template. It was completed as part of a student learning experience to gain practical understanding of cloud network security, resource automation, and Azure infrastructure services.
+
+## Project Objective
+
+The goal of this project was to:
+Create a secure, scalable virtual network.
+Deploy a standard-tier Azure Firewall across availability zones.
+Apply a custom Firewall Policy with constraints and alerts.
+Use ARM templates for reproducibility and automation.
 
 ## How to deploy
 
@@ -38,3 +47,5 @@ Virtual Network: Test-FW-VN
 Subnet: AzureFirewallSubnet
 
 Firewall Policy: fw-test-policy
+
+![alt text](image.png)
