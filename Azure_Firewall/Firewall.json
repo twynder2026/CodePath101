@@ -1,0 +1,48 @@
+{
+    "name": "Test-FW01",
+    "id": "/subscriptions/f6e4c9a5-2acd-44ae-b9e2-665fc4a9ce76/resourceGroups/Test-FW-RG/providers/Microsoft.Network/azureFirewalls/Test-FW01",
+    "etag": "W/\"058b840a-e6df-4742-b41c-bd7a5e69672f\"",
+    "type": "Microsoft.Network/azureFirewalls",
+    "location": "eastus",
+    "tags": {},
+    "zones": [
+        "1",
+        "2",
+        "3"
+    ],
+    "properties": {
+        "provisioningState": "Succeeded",
+        "sku": {
+            "name": "AZFW_VNet",
+            "tier": "Standard"
+        },
+        "threatIntelMode": "Alert",
+        "additionalProperties": {},
+        "ipConfigurations": [
+            {
+                "name": "fw-pip",
+                "id": "/subscriptions/f6e4c9a5-2acd-44ae-b9e2-665fc4a9ce76/resourceGroups/Test-FW-RG/providers/Microsoft.Network/azureFirewalls/Test-FW01/azureFirewallIpConfigurations/fw-pip",
+                "etag": "W/\"058b840a-e6df-4742-b41c-bd7a5e69672f\"",
+                "type": "Microsoft.Network/azureFirewalls/azureFirewallIpConfigurations",
+                "properties": {
+                    "provisioningState": "Succeeded",
+                    "privateIPAddress": "10.0.1.4",
+                    "privateIPAllocationMethod": "Dynamic",
+                    "publicIPAddress": {
+                        "id": "/subscriptions/f6e4c9a5-2acd-44ae-b9e2-665fc4a9ce76/resourceGroups/Test-FW-RG/providers/Microsoft.Network/publicIPAddresses/fw-pip"
+                    },
+                    "subnet": {
+                        "id": "/subscriptions/f6e4c9a5-2acd-44ae-b9e2-665fc4a9ce76/resourceGroups/Test-FW-RG/providers/Microsoft.Network/virtualNetworks/Test-FW-VN/subnets/AzureFirewallSubnet"
+                    }
+                }
+            }
+        ],
+        "networkRuleCollections": [],
+        "applicationRuleCollections": [],
+        "natRuleCollections": [],
+        "firewallPolicy": {
+            "id": "/subscriptions/f6e4c9a5-2acd-44ae-b9e2-665fc4a9ce76/resourceGroups/Test-FW-RG/providers/Microsoft.Network/firewallPolicies/fw-test-policy"
+        }
+    },
+    "apiVersion": "2020-05-01"
+}
