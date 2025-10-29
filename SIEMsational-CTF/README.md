@@ -1,8 +1,4 @@
-🕵️‍♀️ SIEMsational CTF
-
-Course: CodePath CYB102 – Intermediate Cybersecurity
-Student: Teliyah Wynder
-Email: twynder@pvamu.edu
+CodePath: SIEMsational Capture The Flag
 
 📖 Overview
 
