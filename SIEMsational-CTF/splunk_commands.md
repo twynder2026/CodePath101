@@ -82,7 +82,7 @@ Solution: 1997
 source="/home/codepath/Files/Splunk-5-6-7/netflix_titles.csv" type="TV Show" | stats min(release_year) as Oldest_Year by title | sort Oldest_Year
 ## Found the minimum release year and the corresponding TV show titles.
 
-🔐 Part 2 – PathCode Inc. Malware Investigation
+## Part 2 – PathCode Inc. Malware Investigation
 
 Challenge 11: What was the IP address that uploaded the malware (MD5: 3AADBF7E527FC1A050E1C97FEA1CBA4D)?
 Solution: 192.168.1.10
