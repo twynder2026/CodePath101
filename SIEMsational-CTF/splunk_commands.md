@@ -29,28 +29,28 @@ The challenges were divided into two parts:
 - Part 2: Investigating a simulated security breach at PathCode Inc.  
 
 
-#### Part 1: Netflix Dataset Analysis  
+## Part 1: Netflix Dataset Analysis  
 
 Challenge 1  
 Question: How many TV shows on Netflix are in the Docuseries genre?  
 Solution: 790  
 source="/home/codepath/Files/Splunk-5-6-7/netflix_titles.csv" type="TV Show" listed_in="*Docuseries*" | stats count
-## This command filtered TV shows that contained the word “Docuseries” in the genre field and counted the total number.
+#### This command filtered TV shows that contained the word “Docuseries” in the genre field and counted the total number.
 
 Challenge 2: How many movies on Netflix have a rating of TV-PG?
 Solution: 1080
 source="/home/codepath/Files/Splunk-5-6-7/netflix_titles.csv" type="Movie" rating="TV-PG" | stats count
-## This search looked only at movies rated TV-PG and displayed the count.
+#### This search looked only at movies rated TV-PG and displayed the count.
 
 Challenge 3: How many movies on Netflix were released in the year 2020?
 Solution: 1034
 source="/home/codepath/Files/Splunk-5-6-7/netflix_titles.csv" type="Movie" release_year=2020 | stats count
-## Filtered the dataset by release year 2020 and movie type.
+#### Filtered the dataset by release year 2020 and movie type.
 
 Challenge 4: What is the longest duration by season on Netflix, and what is its TV rating?
 Solution: TV-MA and TV-PG
 source="/home/codepath/Files/Splunk-5-6-7/netflix_titles.csv" type="TV Show" | stats max(duration) as Longest_Season by rating
-## Calculated the longest duration for all TV shows and grouped by rating.
+#### Calculated the longest duration for all TV shows and grouped by rating.
 
 Challenge 5: How many movies on Netflix are listed as Action and rated PG-13?
 Solution: 296
