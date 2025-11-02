@@ -35,12 +35,12 @@ The challenges were divided into two parts:
 Question: How many TV shows on Netflix are in the Docuseries genre?  
 Solution: 790  
 source="/home/codepath/Files/Splunk-5-6-7/netflix_titles.csv" type="TV Show" listed_in="*Docuseries*" | stats count
-## This command filtered TV shows that contained the word “Docuseries” in the genre field and counted the total number.
+This command filtered TV shows that contained the word “Docuseries” in the genre field and counted the total number.
 
 Challenge 2: How many movies on Netflix have a rating of TV-PG?
 Solution: 1080
 source="/home/codepath/Files/Splunk-5-6-7/netflix_titles.csv" type="Movie" rating="TV-PG" | stats count
-## This search looked only at movies rated TV-PG and displayed the count.
+This search looked only at movies rated TV-PG and displayed the count.
 
 Challenge 3: How many movies on Netflix were released in the year 2020?
 Solution: 1034
