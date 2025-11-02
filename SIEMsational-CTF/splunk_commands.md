@@ -1,3 +1,4 @@
+<img width="1136" height="600" alt="image" src="https://github.com/user-attachments/assets/454b8fde-4c93-4d26-9ddd-92e7db9b6377" />
 # Splunk Commands and Environment  
 
 ### Environment Setup  
