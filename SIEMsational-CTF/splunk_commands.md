@@ -29,18 +29,18 @@ The challenges were divided into two parts:
 - Part 2: Investigating a simulated security breach at PathCode Inc.  
 
 
-## Part 1: Netflix Dataset Analysis  
+#### Part 1: Netflix Dataset Analysis  
 
-### Challenge 1  
+Challenge 1  
 Question: How many TV shows on Netflix are in the Docuseries genre?  
 Solution: 790  
 source="/home/codepath/Files/Splunk-5-6-7/netflix_titles.csv" type="TV Show" listed_in="*Docuseries*" | stats count
-This command filtered TV shows that contained the word “Docuseries” in the genre field and counted the total number.
+## This command filtered TV shows that contained the word “Docuseries” in the genre field and counted the total number.
 
 Challenge 2: How many movies on Netflix have a rating of TV-PG?
 Solution: 1080
 source="/home/codepath/Files/Splunk-5-6-7/netflix_titles.csv" type="Movie" rating="TV-PG" | stats count
-This search looked only at movies rated TV-PG and displayed the count.
+## This search looked only at movies rated TV-PG and displayed the count.
 
 Challenge 3: How many movies on Netflix were released in the year 2020?
 Solution: 1034
@@ -82,7 +82,7 @@ Solution: 1997
 source="/home/codepath/Files/Splunk-5-6-7/netflix_titles.csv" type="TV Show" | stats min(release_year) as Oldest_Year by title | sort Oldest_Year
 ## Found the minimum release year and the corresponding TV show titles.
 
-## Part 2 – PathCode Inc. Malware Investigation
+#### Part 2 – PathCode Inc. Malware Investigation
 
 Challenge 11: What was the IP address that uploaded the malware (MD5: 3AADBF7E527FC1A050E1C97FEA1CBA4D)?
 Solution: 192.168.1.10
